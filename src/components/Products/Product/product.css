@@ -1,0 +1,133 @@
+.product-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90vh;
+    transform-style: preserve-3d;
+}
+
+.product-container .product-box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #232323;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    -webkit-box-shadow: 0 0 10px #000;
+        box-shadow: 0 0 10px #000;
+}
+
+.product-container .product-box:hover {
+    -webkit-box-shadow: 0 0 10px #000;
+        box-shadow: 0 0 10px #000;
+}
+
+.product-container .product-box::before {
+    content: 'ONLINE';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.product-container .product-box::after {
+    content: 'STORE';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.product-container .product-box:hover::before,
+.product-container .product-box:hover::after {
+    opacity: 0.04;
+}
+
+.product-container .product-box .product-name {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.product-container .product-box:hover .product-name {
+    top: 40px;
+    opacity: 1;
+}
+
+.product-container .product-box .buy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, 0, 75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;   
+}
+
+.product-container .product-box:hover .buy {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.product-container .product-box .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0px);
+}
+
+.product-container .product-box .product-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 230px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 60px);
+}
+
+.product-container .product-box:hover .product-img {
+    transform: translate3d(-50%, -50%, 50px) rotate(-15deg);
+}
+
+
+.product-information {
+    width: 100%;
+    padding: 70px 30px;
+}

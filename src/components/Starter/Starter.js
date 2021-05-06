@@ -38,7 +38,7 @@ export default function Starter() {
             <Container maxWidth="xl" className={classes.container}>
                 <Grid container justify="center">
                     <Grid className={classes.gridItem} item xs={12} sm={6} md={3} lg={3} data-aos="zoom-in">
-                        <img className="mb-4" src="https://img.icons8.com/plasticine/45/000000/loyalty.png"/>
+                        <img className="mb-4" src="https://img.icons8.com/plasticine/45/000000/loyalty.png" alt="shop"/>
                         <Typography variant="h4" gutterBottom className={classes.itemTitle}>
                             Building a better you
                         </Typography>
@@ -47,7 +47,7 @@ export default function Starter() {
                         </Typography>
                     </Grid>
                     <Grid className={classes.gridItem} item xs={12} sm={6} md={3} lg={3} data-aos="zoom-in">
-                        <img className="mb-4" src="https://img.icons8.com/cotton/45/000000/clothes--v2.png"/>
+                        <img className="mb-4" src="https://img.icons8.com/cotton/45/000000/clothes--v2.png" alt="shirt"/>
                         <Typography variant="h4" gutterBottom className={classes.itemTitle}>
                             Dresses to be noticed
                         </Typography>
@@ -56,7 +56,7 @@ export default function Starter() {
                         </Typography>
                     </Grid>
                     <Grid className={classes.gridItem} item xs={12} sm={6} md={3} lg={3} data-aos="zoom-in">
-                        <img className="mb-4" src="https://img.icons8.com/cotton/45/000000/online-order.png"/>   
+                        <img className="mb-4" src="https://img.icons8.com/cotton/45/000000/online-order.png" alt="ecommerce"/>   
                         <Typography variant="h4" gutterBottom className={classes.itemTitle}>
                             stay home and shop online
                         </Typography>

@@ -7,8 +7,6 @@ import AddressForm from '../AddressForm';
 import PaymentForm from '../PaymentForm';
 import useStyles from './styles';
 
-import logo from '../../../assets/commerce.png';
-
 const steps = ['Shipping address', 'Payment details'];
 
 const Checkout = ({ cart, onCaptureCheckout, order, error }) => {

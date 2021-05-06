@@ -1,5 +1,5 @@
 import React from 'react';
-import {AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography} from '@material-ui/core';
+import {AppBar, Toolbar, IconButton, Badge, Typography} from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import Brightness3Icon from '@material-ui/icons/Brightness3';
@@ -23,7 +23,7 @@ export default function Navbar({ totalItems, mode, handleTheme }) {
                         Commerce.js
                     </Typography>
                     <div className={classes.grow} />
-                    {location.pathname == '/products' && (
+                    {location.pathname === '/products' && (
                     <div >
                         <IconButton className="mr-2" component={Link} to="/cart" aria-label="Show Cart Items" color="inherit">
                             <Badge badgeContent={totalItems} color="secondary">

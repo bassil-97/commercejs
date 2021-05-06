@@ -1,12 +1,9 @@
 import React from 'react';
-import Slider from "react-slick";
 import {Typography, Container, Button, Grid} from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import RemoveShoppingCartIcon from '@material-ui/icons/RemoveShoppingCart';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 import useStyles from './styles';
 import CartItem from './CartItem/CartItem';

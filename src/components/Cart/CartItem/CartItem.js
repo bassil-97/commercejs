@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Button, Card, CardActions, CardContent, CardMedia, IconButton } from '@material-ui/core';
+import { Typography, Card, CardActions, CardContent, CardMedia, IconButton } from '@material-ui/core';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import RemoveIcon from '@material-ui/icons/Remove';

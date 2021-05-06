@@ -8,7 +8,6 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Skeleton from '@material-ui/lab/Skeleton';
 
 import Product from '../Products/Product/Product';
 
@@ -64,17 +63,9 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function SimpleTabs({isLoaded, products, categories, onAddToCart}) {
+export default function SimpleTabs({isLoaded, categories, onAddToCart}) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-
-  const skeleton = (
-    <div>
-      <Skeleton variant="text" />
-      <Skeleton variant="circle" width={40} height={40} />
-      <Skeleton variant="rect" width={210} height={118} />
-    </div>
-  );
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

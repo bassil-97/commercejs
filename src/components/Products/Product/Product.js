@@ -12,7 +12,7 @@ export default function Product({isLoaded , product, onAddToCart }) {
 
     const classes = useStyles();
 
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
     const skeleton = (
         <div>
           <Skeleton variant="text" />
